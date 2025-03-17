@@ -2,17 +2,18 @@ package basicSyntax;
 
 public class MethodPractice {
 	
-	//メソッド5 コンソールに出力するためのメソッド
-		public static void main(String[] args) {
-			// TODO 自動生成されたメソッド・スタブ
-			int a = 100;
-			int b = 50;
-			
-			System.out.println(add(a, b));
-			System.out.println(subtract(a, b));
-			System.out.println(multiply(a, b));
-			System.out.println(divide(a, b));
-		}
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		int a = 100;
+		int b = 50;
+		
+		// 各計算結果を出力
+        printResult(add(a, b));
+        printResult(subtract(a, b));
+        printResult(multiply(a, b));
+        printResult(divide(a, b));
+		
+	}
 
 	//メソッド1 二つの値を足し算するメソッド
 	//addまたはaddup:英語で「加える、足す」を意味し、足し算を行うメソッドにふさわしい名前。
@@ -34,6 +35,9 @@ public class MethodPractice {
 	public static int divide(int a, int b) {
         return a / b;
     }
-	
+	//メソッド5 コンソールに出力するためのメソッド
+	public static void printResult(int result) {
+        System.out.println("計算結果は" + result + "です。");
+    }
 
 }
